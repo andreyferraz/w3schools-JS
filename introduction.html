@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução</title>
+</head>
+<body>
+    <h1 style="text-align: center;">CRIANDO FUNÇÕES EM JS</h1>
+<hr>
+    <h2>Clique Exibindo Algo</h2>
+    <p id="paragrafo">Clique abaixo para comprar</p>
+    <button type="button" onclick="frase()">
+        CLIQUE AQUI PARA COMPRAR 
+    </button>
+<hr>
+    <h2>Mudando uma imagem</h2>
+    <button onclick="ligaLampada()">Ligar a Luz</button>
+    <img id="lampada" src="img/pic_bulboff.gif">
+    <button onclick="desligaLampada()">Desligar a Luz</button>
+<hr>
+ <h2>Dando o zoom em um texto ao clicar nele</h2>
+ <p id="txtZoom" onclick="zoomMaior()" style="cursor: pointer;">
+    Vamos conseguir ler isso aqui melhor após fazer uma boa leitura, se não estiver conseguindo ler direito, clique aqui para almentar o tamanho da fonte
+  </p>
+  <hr>
+  <h2>Ocultando o texto abaixo com o clique</h2>
+  <p id="txtOcultar" onclick="ocultarTexto()">Se tu não quiser ler isso, basta clicar aqui</p>
+<hr>
+<h2>Visualizando algo após clique</h2>
+<img id="imgOculta" src="img/selo_sou_foda.jpg" style="display: none;">
+<button onclick="mostrarElemento()">Visualizar Imagem</button>
+
+    <script src="introduction.js"></script>
+</body>
+</html>
