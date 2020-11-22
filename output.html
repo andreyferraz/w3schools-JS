@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saidas em Javascript</title>
+</head>
+
+<body>
+    <h2 style="text-align: center;">Formas de Saída do Javascript</h2>
+    <hr>
+    <h2>escrevendo o JS usando o innerHtml</h2>
+    <p>
+        Abaixo o resultado da soma:
+    </p>
+    <p id="resultado"></p>
+    <script>
+        document.getElementById('resultado').innerHTML = 6 + 5;
+    </script>
+    <hr>
+    <h2>para fins de teste é interessante usar o document.write</h2>
+        <script>
+            document.write(6 + 5);
+        </script>
+    <p>o document.write() destroi todos os html existentes, exemplo logo abaixo</p>
+    <button type="button" onclick="document.write(6 - 5);">Clique Aqui</button>
+    <p>dessa forma não pode ser feito, esse metódo deve ser usado apenas para testes</p>
+    <hr>
+        <h2>Usando o window.alert() para exibir dados</h2>
+        <p>Clique abaixo para saber o valor da soma de 1570 / 2.5</p>
+        <button onclick="exibirAlerta()" >OBTER RESULTADO</button>
+
+     <hr>
+     <h2>IMPRIMINDO O CONTEÚDO DA PÁGINA</h2>
+     <p>apenas ao passar o mouse no botão</p>
+     <button type="button" onmouseover="imprimindoConteudo()">IMPRIMIR PÁGINA</button>   
+    <script src="output.js"></script>
+</body>
+
+</html>
